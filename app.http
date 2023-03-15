@@ -1,1 +1,23 @@
 http://localhost:3000/players
+###
+http://localhost:3000/players/7
+###
+post http://localhost:3000/players/
+Content-Type: application/json
+
+{
+     "playerName": "Vishal",
+  "jerseyNumber": 17,
+  "role": "Bow"
+}
+###
+put http://localhost:3000/players/3
+Content-Type: application/json
+
+{
+    "playername":"john",
+    "jerseynumber":18,
+    "role":"Batsman"
+}
+###
+delete http://localhost:3000/players/3/
